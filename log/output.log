@@ -1,0 +1,233 @@
+17:17:23,007 ERROR main CommandsService:add:25 - Error add Commands
+17:17:23,011 ERROR main CommandsService:add:25 - Error add Commands
+17:24:03,208 ERROR main CommandsService:add:25 - Error add Commands
+17:24:14,722 ERROR main CommandsService:add:25 - Error add Commands
+17:25:10,499  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+17:25:10,503 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+17:25:10,506 ERROR main CommandsService:add:25 - Error add Commands
+17:25:10,509  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+17:25:10,509 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+17:25:10,510 ERROR main CommandsService:add:25 - Error add Commands
+17:54:53,869  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+17:54:53,884 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+17:54:53,884 ERROR main CommandsService:add:25 - Error add Commands
+17:54:53,884  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+17:54:53,884 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+17:54:53,884 ERROR main CommandsService:add:25 - Error add Commands
+17:58:57,670  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+17:58:57,670 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+17:58:57,670 ERROR main CommandsService:add:25 - Error add Commands
+17:58:57,685  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+17:58:57,685 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+17:58:57,685 ERROR main CommandsService:add:25 - Error add Commands
+18:19:01,960 ERROR main SchemaUpdate:execute:236 - HHH000388: Unsuccessful: alter table goals add constraint FK_9g4hp1iakbw7egdpml9tpwpwe foreign key (matches_id) references players (id)
+18:19:01,960 ERROR main SchemaUpdate:execute:237 - Can't write; duplicate key in table '#sql-868_7f'
+09:18:20,649 ERROR main SchemaUpdate:execute:236 - HHH000388: Unsuccessful: alter table goals add constraint FK_e1eaakm3mtspnj9icnm1h5ew0 foreign key (match_id) references players (id)
+09:18:20,703 ERROR main SchemaUpdate:execute:237 - Can't write; duplicate key in table '#sql-a78_f'
+09:18:42,260  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+09:18:42,261 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+09:18:42,410 ERROR main CommandsService:add:25 - Error add Commands
+09:18:42,417  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+09:18:42,417 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+09:18:42,418 ERROR main CommandsService:add:25 - Error add Commands
+09:36:56,434 ERROR main SchemaUpdate:execute:236 - HHH000388: Unsuccessful: alter table goals add constraint FK_e1eaakm3mtspnj9icnm1h5ew0 foreign key (match_id) references players (id)
+09:36:56,481 ERROR main SchemaUpdate:execute:237 - Can't write; duplicate key in table '#sql-a78_1c'
+09:37:03,345  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+09:37:03,360 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+09:37:03,360 ERROR main CommandsService:add:25 - Error add Commands
+09:37:03,360  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+09:37:03,360 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'match_id' doesn't have a default value
+09:37:03,360 ERROR main CommandsService:add:25 - Error add Commands
+17:11:48,965 ERROR main CommandsService:add:23 - Error add Tournament
+17:21:02,233 ERROR main TournamentService:add:23 - Error add Tournament
+17:25:28,039 ERROR main TournamentService:add:23 - Error add Tournament
+15:32:12,973 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table commands_players drop foreign key FK_lavlpyawxxs76ypoj5s2todn4
+15:32:12,997 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_lavlpyawxxs76ypoj5s2todn4'; check that column/key exists
+15:32:13,059 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table commands_players drop foreign key FK_dq55hjuckwr89nb06y1o9j5dy
+15:32:13,059 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_dq55hjuckwr89nb06y1o9j5dy'; check that column/key exists
+15:32:14,048 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_6m5huaujfvajg7tgqb1sxyem8
+15:32:14,049 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_6m5huaujfvajg7tgqb1sxyem8'; check that column/key exists
+15:32:14,121 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_e1eaakm3mtspnj9icnm1h5ew0
+15:32:14,122 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_e1eaakm3mtspnj9icnm1h5ew0'; check that column/key exists
+15:32:14,611 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table leagues drop foreign key FK_samvsyao2u70omjdq8xg9dfis
+15:32:14,612 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_samvsyao2u70omjdq8xg9dfis'; check that column/key exists
+15:32:15,398 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches drop foreign key FK_h7ce3e7e0qgr0pj2se8a5n6po
+15:32:15,399 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_h7ce3e7e0qgr0pj2se8a5n6po'; check that column/key exists
+15:32:16,047 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches_commands drop foreign key FK_n7e28xs5573gd924k40umjkjw
+15:32:16,048 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_n7e28xs5573gd924k40umjkjw'; check that column/key exists
+15:32:16,101 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches_commands drop foreign key FK_dnsmbpf39auae8pw2wd6oumf5
+15:32:16,101 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_dnsmbpf39auae8pw2wd6oumf5'; check that column/key exists
+15:32:17,846 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists Commands
+15:32:17,847 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+15:32:19,859 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists matches
+15:32:19,859 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+15:32:21,708 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists tournaments
+15:32:21,709 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+15:32:21,921 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table Commands (id integer not null auto_increment, city varchar(255), name_command varchar(255), rating integer, trainer varchar(255), primary key (id))
+15:32:21,921 ERROR main SchemaExport:perform:426 - Table 'commands' already exists
+15:32:24,421 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table matches (id integer not null auto_increment, date_match datetime, num_card integer, place varchar(255), tournament_id integer, primary key (id))
+15:32:24,421 ERROR main SchemaExport:perform:426 - Table 'matches' already exists
+15:32:25,959 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table tournaments (id integer not null auto_increment, name_tournaments varchar(255), primary key (id))
+15:32:25,960 ERROR main SchemaExport:perform:426 - Table 'tournaments' already exists
+15:32:32,039 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals add constraint FK_e1eaakm3mtspnj9icnm1h5ew0 foreign key (match_id) references players (id)
+15:32:32,039 ERROR main SchemaExport:perform:426 - Can't write; duplicate key in table '#sql-b78_26'
+15:36:20,199 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table commands_players drop foreign key FK_lavlpyawxxs76ypoj5s2todn4
+15:36:20,206 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_lavlpyawxxs76ypoj5s2todn4'; check that column/key exists
+15:36:20,252 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table commands_players drop foreign key FK_dq55hjuckwr89nb06y1o9j5dy
+15:36:20,253 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_dq55hjuckwr89nb06y1o9j5dy'; check that column/key exists
+15:36:20,301 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_e1eaakm3mtspnj9icnm1h5ew0
+15:36:20,302 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_e1eaakm3mtspnj9icnm1h5ew0'; check that column/key exists
+15:36:20,343 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_6m5huaujfvajg7tgqb1sxyem8
+15:36:20,344 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_6m5huaujfvajg7tgqb1sxyem8'; check that column/key exists
+15:36:20,387 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_e1eaakm3mtspnj9icnm1h5ew0
+15:36:20,387 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_e1eaakm3mtspnj9icnm1h5ew0'; check that column/key exists
+15:36:20,442 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table leagues drop foreign key FK_samvsyao2u70omjdq8xg9dfis
+15:36:20,443 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_samvsyao2u70omjdq8xg9dfis'; check that column/key exists
+15:36:20,485 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches drop foreign key FK_h7ce3e7e0qgr0pj2se8a5n6po
+15:36:20,485 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_h7ce3e7e0qgr0pj2se8a5n6po'; check that column/key exists
+15:36:20,527 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches_commands drop foreign key FK_n7e28xs5573gd924k40umjkjw
+15:36:20,528 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_n7e28xs5573gd924k40umjkjw'; check that column/key exists
+15:36:20,574 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches_commands drop foreign key FK_dnsmbpf39auae8pw2wd6oumf5
+15:36:20,575 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_dnsmbpf39auae8pw2wd6oumf5'; check that column/key exists
+15:36:20,637 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table periods drop foreign key FK_fcekbh6rijlardeagv5afnl44
+15:36:20,638 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_fcekbh6rijlardeagv5afnl44'; check that column/key exists
+15:36:20,850 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists Commands
+15:36:20,851 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+15:36:21,603 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists matches
+15:36:21,604 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+15:36:22,365 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists tournaments
+15:36:22,365 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+15:36:22,761 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table Commands (id integer not null auto_increment, city varchar(255), name_command varchar(255), rating integer, trainer varchar(255), primary key (id))
+15:36:22,762 ERROR main SchemaExport:perform:426 - Table 'commands' already exists
+15:36:24,280 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table matches (id integer not null auto_increment, date_match datetime, num_card integer, place varchar(255), tournament_id integer, primary key (id))
+15:36:24,281 ERROR main SchemaExport:perform:426 - Table 'matches' already exists
+15:36:25,759 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table tournaments (id integer not null auto_increment, name_tournaments varchar(255), primary key (id))
+15:36:25,759 ERROR main SchemaExport:perform:426 - Table 'tournaments' already exists
+15:36:32,535 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals add constraint FK_e1eaakm3mtspnj9icnm1h5ew0 foreign key (match_id) references players (id)
+15:36:32,536 ERROR main SchemaExport:perform:426 - Can't write; duplicate key in table '#sql-b78_30'
+16:13:22,457 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_e1eaakm3mtspnj9icnm1h5ew0
+16:13:22,488 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_e1eaakm3mtspnj9icnm1h5ew0'; check that column/key exists
+16:13:43,155 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals add constraint FK_e1eaakm3mtspnj9icnm1h5ew0 foreign key (match_id) references players (id)
+16:13:43,155 ERROR main SchemaExport:perform:426 - Can't write; duplicate key in table '#sql-b78_35'
+16:13:50,568 ERROR main MatchesService:add:32 - Error add Matche
+16:55:49,819 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table commands_players drop foreign key FK_lavlpyawxxs76ypoj5s2todn4
+16:55:49,822 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_lavlpyawxxs76ypoj5s2todn4'; check that column/key exists
+16:55:49,885 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table commands_players drop foreign key FK_dq55hjuckwr89nb06y1o9j5dy
+16:55:49,886 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_dq55hjuckwr89nb06y1o9j5dy'; check that column/key exists
+16:55:50,044 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_e1eaakm3mtspnj9icnm1h5ew0
+16:55:50,044 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_e1eaakm3mtspnj9icnm1h5ew0'; check that column/key exists
+16:55:50,101 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_6m5huaujfvajg7tgqb1sxyem8
+16:55:50,102 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_6m5huaujfvajg7tgqb1sxyem8'; check that column/key exists
+16:55:50,173 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals drop foreign key FK_e1eaakm3mtspnj9icnm1h5ew0
+16:55:50,174 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_e1eaakm3mtspnj9icnm1h5ew0'; check that column/key exists
+16:55:50,230 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table leagues drop foreign key FK_samvsyao2u70omjdq8xg9dfis
+16:55:50,230 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_samvsyao2u70omjdq8xg9dfis'; check that column/key exists
+16:55:50,477 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches drop foreign key FK_h7ce3e7e0qgr0pj2se8a5n6po
+16:55:50,477 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_h7ce3e7e0qgr0pj2se8a5n6po'; check that column/key exists
+16:55:50,554 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches_commands drop foreign key FK_n7e28xs5573gd924k40umjkjw
+16:55:50,555 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_n7e28xs5573gd924k40umjkjw'; check that column/key exists
+16:55:50,623 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table matches_commands drop foreign key FK_dnsmbpf39auae8pw2wd6oumf5
+16:55:50,624 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_dnsmbpf39auae8pw2wd6oumf5'; check that column/key exists
+16:55:50,710 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table periods drop foreign key FK_fcekbh6rijlardeagv5afnl44
+16:55:50,710 ERROR main SchemaExport:perform:426 - Can't DROP 'FK_fcekbh6rijlardeagv5afnl44'; check that column/key exists
+16:55:50,940 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists Commands
+16:55:50,940 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+16:55:52,448 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists matches
+16:55:52,449 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+16:55:53,705 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: drop table if exists tournaments
+16:55:53,705 ERROR main SchemaExport:perform:426 - Cannot delete or update a parent row: a foreign key constraint fails
+16:55:53,804 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table Commands (id integer not null auto_increment, city varchar(255), name_command varchar(255), rating integer, trainer varchar(255), primary key (id))
+16:55:53,804 ERROR main SchemaExport:perform:426 - Table 'commands' already exists
+16:55:55,273 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table matches (id integer not null auto_increment, date_match date, num_card integer, place varchar(255), tournament_id integer, primary key (id))
+16:55:55,274 ERROR main SchemaExport:perform:426 - Table 'matches' already exists
+16:55:56,807 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: create table tournaments (id integer not null auto_increment, name_tournaments varchar(255), primary key (id))
+16:55:56,807 ERROR main SchemaExport:perform:426 - Table 'tournaments' already exists
+16:56:02,091 ERROR main SchemaExport:perform:425 - HHH000389: Unsuccessful: alter table goals add constraint FK_e1eaakm3mtspnj9icnm1h5ew0 foreign key (match_id) references players (id)
+16:56:02,092 ERROR main SchemaExport:perform:426 - Can't write; duplicate key in table '#sql-868_9e'
+17:34:41,130  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1406, SQLState: 22001
+17:34:41,133 ERROR main SqlExceptionHelper:logExceptions:146 - Data truncation: Data too long for column 'place' at row 1
+17:34:41,135 ERROR main MatchesService:add:32 - Error add Matche
+17:34:41,136  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1406, SQLState: 22001
+17:34:41,137 ERROR main SqlExceptionHelper:logExceptions:146 - Data truncation: Data too long for column 'place' at row 1
+17:34:41,137 ERROR main MatchesService:add:32 - Error add Matche
+09:50:33,772  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1406, SQLState: 22001
+09:50:33,835 ERROR main SqlExceptionHelper:logExceptions:146 - Data truncation: Data too long for column 'place' at row 1
+09:50:33,897 ERROR main MatchesService:add:32 - Error add Matche
+09:50:33,913  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1406, SQLState: 22001
+09:50:33,913 ERROR main SqlExceptionHelper:logExceptions:146 - Data truncation: Data too long for column 'place' at row 1
+09:50:33,913 ERROR main MatchesService:add:32 - Error add Matche
+09:50:33,944  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:33,944 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:33,944 ERROR main GoalsService:add:23 - Error add goal
+09:50:33,944  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:33,944 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:33,944 ERROR main GoalsService:add:23 - Error add goal
+09:50:33,944  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:33,944 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:33,944 ERROR main GoalsService:add:23 - Error add goal
+09:50:33,959  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:33,959 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:33,959 ERROR main GoalsService:add:23 - Error add goal
+09:50:33,959  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:33,959 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:33,959 ERROR main GoalsService:add:23 - Error add goal
+09:50:33,975  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:33,975 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:33,975 ERROR main PeriodsService:add:19 - Error add period
+09:50:34,006  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:34,006 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:34,006 ERROR main PeriodsService:add:19 - Error add period
+09:50:34,006  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:34,006 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:34,006 ERROR main PeriodsService:add:19 - Error add period
+09:50:34,006  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:50:34,006 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:50:34,006 ERROR main PeriodsService:add:19 - Error add period
+09:54:14,190  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1406, SQLState: 22001
+09:54:14,190 ERROR main SqlExceptionHelper:logExceptions:146 - Data truncation: Data too long for column 'place' at row 1
+09:54:14,190 ERROR main MatchesService:add:32 - Error add Matche
+09:54:14,222  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1406, SQLState: 22001
+09:54:14,222 ERROR main SqlExceptionHelper:logExceptions:146 - Data truncation: Data too long for column 'place' at row 1
+09:54:14,222 ERROR main MatchesService:add:32 - Error add Matche
+09:54:14,237  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:54:14,237 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:54:14,237 ERROR main GoalsService:add:23 - Error add goal
+09:54:14,237  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:54:14,237 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:54:14,237 ERROR main GoalsService:add:23 - Error add goal
+09:54:14,237  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:54:14,237 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:54:14,237 ERROR main GoalsService:add:23 - Error add goal
+09:54:14,237  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:54:14,237 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:54:14,237 ERROR main GoalsService:add:23 - Error add goal
+09:54:14,253  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1048, SQLState: 23000
+09:54:14,253 ERROR main SqlExceptionHelper:logExceptions:146 - Column 'match_id' cannot be null
+09:54:14,253 ERROR main GoalsService:add:23 - Error add goal
+10:04:00,639  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:04:00,639 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:04:00,685 ERROR main PeriodsService:add:19 - Error add period
+10:04:00,732  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:04:00,732 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:04:00,732 ERROR main PeriodsService:add:19 - Error add period
+10:04:00,732  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:04:00,732 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:04:00,732 ERROR main PeriodsService:add:19 - Error add period
+10:04:00,732  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:04:00,732 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:04:00,732 ERROR main PeriodsService:add:19 - Error add period
+10:47:25,897  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:47:25,912 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:47:25,975 ERROR main PeriodsService:add:19 - Error add period
+10:47:25,990  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:47:25,990 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:47:25,990 ERROR main PeriodsService:add:19 - Error add period
+10:47:26,006  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:47:26,006 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:47:26,006 ERROR main PeriodsService:add:19 - Error add period
+10:47:26,006  WARN main SqlExceptionHelper:logExceptions:144 - SQL Error: 1364, SQLState: HY000
+10:47:26,006 ERROR main SqlExceptionHelper:logExceptions:146 - Field 'name_period' doesn't have a default value
+10:47:26,006 ERROR main PeriodsService:add:19 - Error add period
+14:36:51,028 ERROR main CommandsService:getAll:32 - Error add Players
+14:40:56,216 ERROR main CommandsService:getAll:32 - Error getAll Players
+15:15:35,796 ERROR main CommandsService:getAll:41 - Error getAll Players

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+        <!-- Assume test is the database name -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost/tournamentbel
+        </property>
+        <property name="hibernate.connection.username">
+            root
+        </property>
+        <property name="hibernate.connection.password">
+            root
+        </property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="com.intelisoft.tournamentbel.entity.Commands" />
+        <mapping class="com.intelisoft.tournamentbel.entity.Goals" />
+        <mapping class="com.intelisoft.tournamentbel.entity.Leagues" />
+        <mapping class="com.intelisoft.tournamentbel.entity.Matches" />
+        <mapping class="com.intelisoft.tournamentbel.entity.Periods" />
+        <mapping class="com.intelisoft.tournamentbel.entity.Players" />
+        <mapping class="com.intelisoft.tournamentbel.entity.Tournaments" />
+        <mapping class="com.intelisoft.tournamentbel.entity.CommandsPlayers" />
+
+    </session-factory>
+</hibernate-configuration>
