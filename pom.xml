@@ -14,6 +14,7 @@
         <module>tournamentbel-runner</module>
         <module>tournamentbel-api</module>
         <module>tournamentbel-service</module>
+        <module>tournamentbel-web</module>
     </modules>
     <dependencies>
 
@@ -39,6 +40,7 @@
             <artifactId>tournamentbel-entity</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
 </project>
