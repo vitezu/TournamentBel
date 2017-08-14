@@ -16,31 +16,31 @@ public class Runner {
 
 
 //        Add leagues and Tournaments
-        TournamentService tournamentService = new TournamentService();
-        LeagueService leagueService = new LeagueService();
-        CommandsService commandsService = new CommandsService();
-        MatchesService matchesService = new MatchesService();
-        GoalsService goalsService = new GoalsService();
-        PeriodsService periodsService = new PeriodsService();
-        PlayersService playersService = new PlayersService();
+        TournamentServiceImpl tournamentServiceImpl = new TournamentServiceImpl();
+        LeagueServiceImpl leagueService = new LeagueServiceImpl();
+        CommandsServiceImpl commandsService = new CommandsServiceImpl();
+        MatchesServiceImpl matchesService = new MatchesServiceImpl();
+        GoalsServiceImpl goalsService = new GoalsServiceImpl();
+        PeriodsServiceImpl periodsService = new PeriodsServiceImpl();
+        PlayersServiceImpl playersServiceImpl = new PlayersServiceImpl();
 
         Tournaments tournament1 = new Tournaments("Cup of Belarus");
         Leagues topLeague = new Leagues("Top league", tournament1);
         Leagues firstLeague = new Leagues("First league", tournament1);
 
-        tournamentService.add(tournament1);
-        leagueService.add(topLeague);
-        leagueService.add(firstLeague);
+        tournamentServiceImpl.add(tournament1);
+//        leagueService.add(topLeague);
+//        leagueService.add(firstLeague);
 
 //        Add commands
         Commands commandNeman = new Commands("Neman", "Grodno", "Ermakovich", 76);
         Commands commandBate = new Commands("Bate", "Borisov", "Kovalevich", 86);
         Commands commandShahter = new Commands("Shahter", "Soligorsk", "Ermakovich", 76);
         Commands commandKrumkachi = new Commands("Krumkachi", "Minsk", "Kovalevich", 86);
-        commandsService.add(commandNeman);
-        commandsService.add(commandBate);
-        commandsService.add(commandShahter);
-        commandsService.add(commandKrumkachi);
+//        commandsService.add(commandNeman);
+//        commandsService.add(commandBate);
+//        commandsService.add(commandShahter);
+//        commandsService.add(commandKrumkachi);
 
 //        Add players
         Players player1 = new Players("Kovalev", "Oleg", "forward", 21, true);
@@ -83,37 +83,37 @@ public class Runner {
         CommandsPlayers commandsPlayers15= new CommandsPlayers(new java.util.Date(), new java.util.Date(), commandShahter,player15);
         CommandsPlayers commandsPlayers16 = new CommandsPlayers(new java.util.Date(),new java.util.Date(), commandShahter,player16);
 
-        CommandsPlayersService commandsPlayersService = new CommandsPlayersService();
-        commandsPlayersService.add(commandsPlayers1);
-        commandsPlayersService.add(commandsPlayers2);
-        commandsPlayersService.add(commandsPlayers3);
-        commandsPlayersService.add(commandsPlayers4);
-        commandsPlayersService.add(commandsPlayers5);
-        commandsPlayersService.add(commandsPlayers6);
-        commandsPlayersService.add(commandsPlayers7);
-        commandsPlayersService.add(commandsPlayers8);
-        commandsPlayersService.add(commandsPlayers9);
-        commandsPlayersService.add(commandsPlayers10);
-        commandsPlayersService.add(commandsPlayers11);
-        commandsPlayersService.add(commandsPlayers12);
-        commandsPlayersService.add(commandsPlayers13);
-        commandsPlayersService.add(commandsPlayers14);
-        commandsPlayersService.add(commandsPlayers15);
-        commandsPlayersService.add(commandsPlayers16);
+        CommandsPlayersServiceImpl commandsPlayersService = new CommandsPlayersServiceImpl();
+//        commandsPlayersService.add(commandsPlayers1);
+//        commandsPlayersService.add(commandsPlayers2);
+//        commandsPlayersService.add(commandsPlayers3);
+//        commandsPlayersService.add(commandsPlayers4);
+//        commandsPlayersService.add(commandsPlayers5);
+//        commandsPlayersService.add(commandsPlayers6);
+//        commandsPlayersService.add(commandsPlayers7);
+//        commandsPlayersService.add(commandsPlayers8);
+//        commandsPlayersService.add(commandsPlayers9);
+//        commandsPlayersService.add(commandsPlayers10);
+//        commandsPlayersService.add(commandsPlayers11);
+//        commandsPlayersService.add(commandsPlayers12);
+//        commandsPlayersService.add(commandsPlayers13);
+//        commandsPlayersService.add(commandsPlayers14);
+//        commandsPlayersService.add(commandsPlayers15);
+//        commandsPlayersService.add(commandsPlayers16);
 
 //        Add Matches,Commands
         Set<Commands> commandsMatch1 = new HashSet<Commands>();
-        commandsMatch1.add(commandNeman);
-        commandsMatch1.add(commandBate);
+//        commandsMatch1.add(commandNeman);
+//        commandsMatch1.add(commandBate);
         Set<Commands> commandsMatch2= new HashSet<Commands>();
-        commandsMatch2.add(commandKrumkachi);
-        commandsMatch2.add(commandShahter);
+//        commandsMatch2.add(commandKrumkachi);
+//        commandsMatch2.add(commandShahter);
 
         Matches matcheNemanBate = new Matches("Borisovs stadion", 0, new java.util.Date(), tournament1, commandsMatch1);
         Matches matcheKrumkachiShahter = new Matches("Soligorsks stadion", 0, new java.util.Date(), tournament1, commandsMatch2);
 
-        matchesService.add(matcheNemanBate);
-        matchesService.add(matcheKrumkachiShahter);
+//        matchesService.add(matcheNemanBate);
+//        matchesService.add(matcheKrumkachiShahter);
 
 //      Add goals
         Goals goal1 = new Goals(new Time (00-20-30), player1, matcheNemanBate );
@@ -121,11 +121,11 @@ public class Runner {
         Goals goal3 = new Goals(new Time(00-89-30), player5, matcheNemanBate );
         Goals goal4 = new Goals(new Time(00-15-30), player9, matcheKrumkachiShahter );
         Goals goal5 = new Goals(new Time(00-34-32), player10, matcheKrumkachiShahter );
-        goalsService.add(goal1);
-        goalsService.add(goal2);
-        goalsService.add(goal3);
-        goalsService.add(goal4);
-        goalsService.add(goal5);
+//        goalsService.add(goal1);
+//        goalsService.add(goal2);
+//        goalsService.add(goal3);
+//        goalsService.add(goal4);
+//        goalsService.add(goal5);
 
 //      Add periods
 //        Periods period1 = new Periods( Periods.NamePeriod.First, new Time (000200),matcheNemanBate );
@@ -147,8 +147,11 @@ public class Runner {
         goalsService.getAll();
 
 //        GetById
-        System.out.println(goalsService.getById(2));
+//        System.out.println(goalsService.getById(2));
 
+//      Add player
+        playersServiceImpl.add(player3);
+        playersServiceImpl.delete(player3);
 
     }
 
