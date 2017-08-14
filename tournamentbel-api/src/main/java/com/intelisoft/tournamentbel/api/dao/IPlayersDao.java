@@ -7,4 +7,5 @@ import com.intelisoft.tournamentbel.entity.Players;
  * Created by Pavel on 06.08.2017.
  */
 public interface IPlayersDao extends IGenericDao<Players> {
+
 }

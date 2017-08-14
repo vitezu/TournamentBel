@@ -1,16 +1,11 @@
 package com.intelisoft.tournamentbel.api.services;
 
-public interface IGoalsService <Goals> {
+import com.intelisoft.tournamentbel.entity.Goals;
 
-//    public void add (Goals goal){
-//        Session session = HibernateUtil.getSession();
-//        try {
-//            session.beginTransaction();
-//            goalsDao.save(goal, session);
-//            session.getTransaction().commit();
-//        }catch  (Exception e){
-//            logger.error("Error add goal");
-//            session.getTransaction().rollback();
-//        }
-//    }
+public interface IGoalsService  {
+
+    public void add (Goals goal);
+    public void delete(Goals goal);
+    public void getAll();
+    public Goals getById(Integer id);
 }
