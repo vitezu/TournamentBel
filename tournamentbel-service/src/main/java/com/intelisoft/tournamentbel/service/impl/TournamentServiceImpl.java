@@ -1,6 +1,8 @@
 package com.intelisoft.tournamentbel.service.impl;
 
 
+import com.intelisoft.tournamentbel.api.dao.ITournamentsDao;
+import com.intelisoft.tournamentbel.api.services.ITournamentsService;
 import com.intelisoft.tournamentbel.dao.impl.TournamentsDaoImpl;
 import com.intelisoft.tournamentbel.dao.util.HibernateUtil;
 import com.intelisoft.tournamentbel.entity.Tournaments;
@@ -10,14 +12,16 @@ import org.hibernate.Session;
 /**
  * Created by Pavel on 08.08.2017.
  */
-public class TournamentService {
-    private final Logger logger =  Logger.getLogger(TournamentService.class);
-    TournamentsDaoImpl tournamentsDao = new TournamentsDaoImpl();
+public  class TournamentServiceImpl implements ITournamentsService{
+    private final Logger logger =  Logger.getLogger(TournamentServiceImpl.class);
+    TournamentsDaoImpl tournamentsDaoImpl = new TournamentsDaoImpl();
+
+
     public void add (Tournaments tournament){
         Session session = HibernateUtil.getSession();
         try {
             session.beginTransaction();
-            tournamentsDao.save(tournament, session);
+            tournamentsDaoImpl.save(tournament, session);
             session.getTransaction().commit();
         }catch  (Exception e){
             logger.error("Error add Tournament");

@@ -1,5 +1,6 @@
 package com.intelisoft.tournamentbel.service.impl;
 
+import com.intelisoft.tournamentbel.api.services.IGoalsService;
 import com.intelisoft.tournamentbel.dao.impl.GoalsDaoImpl;;
 import com.intelisoft.tournamentbel.dao.util.HibernateUtil;
 import com.intelisoft.tournamentbel.entity.Goals;
@@ -13,15 +14,15 @@ import java.util.List;
 /**
  * Created by Pavel on 09.08.2017.
  */
-public class GoalsService {
-    private final Logger logger = Logger.getLogger(GoalsService.class);
-    GoalsDaoImpl goalsDao = new GoalsDaoImpl();
+public class GoalsServiceImpl implements IGoalsService {
+    private final Logger logger = Logger.getLogger(GoalsServiceImpl.class);
+    GoalsDaoImpl goalsDaoImpl = new GoalsDaoImpl();
 
     public void add(Goals goal) {
         Session session = HibernateUtil.getSession();
         try {
             session.beginTransaction();
-            goalsDao.save(goal, session);
+            goalsDaoImpl.save(goal, session);
             session.getTransaction().commit();
         } catch (Exception e) {
             logger.error("Error add goal");
@@ -33,13 +34,14 @@ public class GoalsService {
         Session session = HibernateUtil.getSession();
         try {
             session.beginTransaction();
-            goalsDao.delete(goal, session);
+            goalsDaoImpl.delete(goal, session);
             session.getTransaction().commit();
         } catch (Exception e) {
             logger.error("Error delete goal");
             session.getTransaction().rollback();
         }
     }
+
 
     public void getAll() {
         List<Goals> goals = null;

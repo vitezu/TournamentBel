@@ -1,19 +1,21 @@
 package com.intelisoft.tournamentbel.service.impl;
 
+import com.intelisoft.tournamentbel.api.services.IPeriodsService;
 import com.intelisoft.tournamentbel.dao.impl.PeriodsDaoImpl;
 import com.intelisoft.tournamentbel.dao.util.HibernateUtil;
 import com.intelisoft.tournamentbel.entity.Periods;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
-public class PeriodsService {
-    private final Logger logger =  Logger.getLogger(PeriodsService.class);
-    PeriodsDaoImpl periodsDao = new PeriodsDaoImpl();
+public class PeriodsServiceImpl implements IPeriodsService {
+    private final Logger logger =  Logger.getLogger(PeriodsServiceImpl.class);
+    PeriodsDaoImpl periodsDaoImpl = new PeriodsDaoImpl();
+
     public void add (Periods period){
         Session session = HibernateUtil.getSession();
         try {
             session.beginTransaction();
-            periodsDao.save(period, session);
+            periodsDaoImpl.save(period, session);
             session.getTransaction().commit();
         }catch  (Exception e){
             logger.error("Error add period");
