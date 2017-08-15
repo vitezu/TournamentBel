@@ -35,9 +35,32 @@ public class PlayersServiceImpl implements IPlayersService {
             logger.error("Error add Players");
             session.getTransaction().rollback();
         }
+    }
+
+    public void GetWithCommand() {
+        Session session = HibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            playersDaoImpl.GetWithCommands(session);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            logger.error("Error GetWithCommand");
+            session.getTransaction().rollback();
+        }
 
 
     }
 
+    public void foundByName(){
 
+        Session session = HibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            playersDaoImpl.foundByName(session);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            logger.error("Error foundByName");
+            session.getTransaction().rollback();
+        }
+    }
 }
