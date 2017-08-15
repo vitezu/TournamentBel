@@ -1,7 +1,7 @@
 package com.intelisoft.tournamentbel.dao.impl;
 
 
-import com.intelisoft.tournamentbel.api.abstractdao.IGenericDao;
+import com.intelisoft.tournamentbel.api.dao.IGenericDao;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
