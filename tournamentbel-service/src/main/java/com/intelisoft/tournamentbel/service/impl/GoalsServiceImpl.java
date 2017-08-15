@@ -9,6 +9,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -46,22 +47,18 @@ public class GoalsServiceImpl implements IGoalsService {
     }
 
 
-    public void getAll() {
-        List<Goals> goals = null;
+    public List<Goals> getAll() {
+        List<Goals> goals = new ArrayList<Goals>();
         Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
-            Criteria criteria = session.createCriteria(Goals.class);
-            criteria.list();
-            goals = criteria.list();
-            for (Goals t : goals) {
-                System.out.println(t);
-            }
+            goalsDaoImpl.getAll(session);
             session.getTransaction().commit();
         } catch (Exception e) {
             logger.error("Error getAll Goals");
             session.getTransaction().rollback();
         }
+        return goals;
     }
 
 

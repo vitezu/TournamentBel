@@ -30,9 +30,9 @@ public class Runner {
         Leagues topLeague = new Leagues("Top league", tournament1);
         Leagues firstLeague = new Leagues("First league", tournament1);
 
-//        tournamentServiceImpl.add(tournament1);
-//        leagueService.add(topLeague);
-//        leagueService.add(firstLeague);
+        tournamentServiceImpl.add(tournament1);
+        leagueService.add(topLeague);
+        leagueService.add(firstLeague);
 
 //        Add commands
         Commands commandNeman = new Commands("Neman", "Grodno", "Ermakovich", 76);
@@ -147,9 +147,13 @@ public class Runner {
 
 //        GetAll
         goalsService.getAll();
+        List<Goals> goals = new ArrayList<Goals>();
+        for (Goals t : goals) {
+            System.out.println(t);
+        }
 
 //        GetById
-//       System.out.println(goalsService.getById(2));
+    System.out.println(goalsService.getById(2));
 
 //      Add player
         playersServiceImpl.add(player3);
