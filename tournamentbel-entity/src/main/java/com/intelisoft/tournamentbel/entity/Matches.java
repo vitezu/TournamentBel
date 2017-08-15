@@ -119,10 +119,10 @@ public class Matches {
         sb.append(", place='").append(place).append('\'');
         sb.append(", numCard=").append(numCard);
         sb.append(", dateMatch=").append(dateMatch);
-        sb.append(", tournament=").append(tournament);
-        sb.append(", periods=").append(periods);
-        sb.append(", goals=").append(goals);
-        sb.append(", commands=").append(commands);
+//        sb.append(", tournament=").append(tournament);
+//        sb.append(", periods=").append(periods);
+//        sb.append(", goals=").append(goals);
+//        sb.append(", commands=").append(commands);
         sb.append('}');
         return sb.toString();
     }

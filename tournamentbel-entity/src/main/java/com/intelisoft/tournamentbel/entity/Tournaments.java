@@ -66,8 +66,8 @@ public class Tournaments {
         final StringBuilder sb = new StringBuilder("Tournaments{");
         sb.append("id=").append(id);
         sb.append(", nameTournaments='").append(nameTournaments).append('\'');
-        sb.append(", leagues=").append(leagues);
-        sb.append(", matches=").append(matches);
+//        sb.append(", leagues=").append(leagues);
+//        sb.append(", matches=").append(matches);
         sb.append('}');
         return sb.toString();
     }

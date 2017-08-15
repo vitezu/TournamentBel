@@ -55,7 +55,7 @@ public class Players {
         sb.append(", typePlayer='").append(typePlayer).append('\'');
         sb.append(", numPlayer=").append(numPlayer);
         sb.append(", commander=").append(commander);
-        sb.append(", goals=").append(goals);
+//        sb.append(", goals=").append(goals);
 //        sb.append(", commandsPlayers=").append(commandsPlayers);
         sb.append('}');
         return sb.toString();
