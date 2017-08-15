@@ -1,9 +1,11 @@
 package com.intelisoft.tournamentbel.runner;
 
+import com.intelisoft.tournamentbel.dao.util.HibernateUtil;
 import com.intelisoft.tournamentbel.entity.*;
 import com.intelisoft.tournamentbel.service.impl.*;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 
 import java.sql.Time;
 
@@ -28,7 +30,7 @@ public class Runner {
         Leagues topLeague = new Leagues("Top league", tournament1);
         Leagues firstLeague = new Leagues("First league", tournament1);
 
-        tournamentServiceImpl.add(tournament1);
+//        tournamentServiceImpl.add(tournament1);
 //        leagueService.add(topLeague);
 //        leagueService.add(firstLeague);
 
@@ -116,8 +118,8 @@ public class Runner {
 //        matchesService.add(matcheKrumkachiShahter);
 
 //      Add goals
-        Goals goal1 = new Goals(new Time (00-20-30), player1, matcheNemanBate );
-        Goals goal2 = new Goals(new Time(00-43-00), player2, matcheNemanBate );
+        Goals goal1 = new Goals(new Time (00-00-00), player1, matcheNemanBate );
+        Goals goal2 = new Goals(new Time(00-00-00), player2, matcheNemanBate );
         Goals goal3 = new Goals(new Time(00-89-30), player5, matcheNemanBate );
         Goals goal4 = new Goals(new Time(00-15-30), player9, matcheKrumkachiShahter );
         Goals goal5 = new Goals(new Time(00-34-32), player10, matcheKrumkachiShahter );
@@ -147,12 +149,15 @@ public class Runner {
         goalsService.getAll();
 
 //        GetById
-//        System.out.println(goalsService.getById(2));
+//       System.out.println(goalsService.getById(2));
 
 //      Add player
         playersServiceImpl.add(player3);
         playersServiceImpl.delete(player3);
 
-    }
+//founByName
+        playersServiceImpl.foundByName();
+
+   }
 
 }
