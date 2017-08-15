@@ -2,10 +2,10 @@ package com.intelisoft.tournamentbel.dao.impl;
 
 import com.intelisoft.tournamentbel.api.dao.IPlayersDao;
 import com.intelisoft.tournamentbel.entity.Players;
-import com.intelisoft.tournamentbel.entity.Tournaments;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.sql.JoinType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,14 +19,15 @@ public class PlayersDaoImpl extends AbstractDaoImpl<Players> implements IPlayers
         super(Players.class);
     }
 
-    public List<Players> GetWithCommands (Session session) {
+    public void GetWithCommands (Session session) {
         List<Players> players = new ArrayList<Players>();
-        Criteria criteria = session.createCriteria(Players.class).createCriteria("commandsPlayer")
-                .add(Restrictions.eq("lastName", "Popov"));
-//.createCriteria("owner")
-//                .add(Restrictions.eq("lastName", "Testoff"))
+        Criteria criteria = session.createCriteria(Players.class).createAlias("commandsPlayers","c", JoinType.LEFT_OUTER_JOIN)
+                .add(Restrictions.eq("lastName", "Sidorov"));
 
-        return players;
+        players = criteria.list();
+        for (Players p : players){
+            System.out.println(p);
+        }
     }
     public void foundByName (Session session) {
         Criteria criteria = session.createCriteria(Players.class)
