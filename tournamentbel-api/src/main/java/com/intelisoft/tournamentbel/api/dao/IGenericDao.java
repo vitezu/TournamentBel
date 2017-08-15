@@ -1,4 +1,4 @@
-package com.intelisoft.tournamentbel.api.abstractdao;
+package com.intelisoft.tournamentbel.api.dao;
 
 import org.hibernate.Session;
 

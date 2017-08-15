@@ -1,6 +1,5 @@
 package com.intelisoft.tournamentbel.api.dao;
 
-import com.intelisoft.tournamentbel.api.abstractdao.IGenericDao;
 import com.intelisoft.tournamentbel.entity.Matches;
 
 /**
