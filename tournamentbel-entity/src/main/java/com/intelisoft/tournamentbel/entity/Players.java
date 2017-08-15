@@ -46,5 +46,18 @@ public class Players {
         this.commander = commander;
     }
 
-
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Players{");
+        sb.append("id=").append(id);
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", firstName='").append(firstName).append('\'');
+        sb.append(", typePlayer='").append(typePlayer).append('\'');
+        sb.append(", numPlayer=").append(numPlayer);
+        sb.append(", commander=").append(commander);
+        sb.append(", goals=").append(goals);
+//        sb.append(", commandsPlayers=").append(commandsPlayers);
+        sb.append('}');
+        return sb.toString();
+    }
 }
