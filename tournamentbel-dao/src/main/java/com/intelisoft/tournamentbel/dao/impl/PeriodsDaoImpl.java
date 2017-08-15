@@ -13,5 +13,7 @@ import java.util.List;
 public class PeriodsDaoImpl extends AbstractDaoImpl<Periods> implements IPeriodsDao {
 
 
-
+    public PeriodsDaoImpl() {
+        super(Periods.class);
+    }
 }

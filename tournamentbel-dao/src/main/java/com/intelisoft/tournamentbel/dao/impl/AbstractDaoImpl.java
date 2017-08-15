@@ -14,6 +14,10 @@ import java.util.List;
 public class AbstractDaoImpl<T> implements IGenericDao<T> {
     private Class<T> tclass;
 
+    protected AbstractDaoImpl(Class cl){
+        this.tclass = cl;
+    }
+
 
 
     public void save(T obj, Session session) {

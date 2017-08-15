@@ -158,6 +158,9 @@ public class Runner {
 //founByName
         playersServiceImpl.foundByName();
 
+
+//
+        playersServiceImpl.GetWithCommand();
    }
 
 }

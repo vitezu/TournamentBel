@@ -13,5 +13,7 @@ import java.util.List;
 public class MatchesDaoImpl extends AbstractDaoImpl<Matches> implements IMatchesDao {
 
 
-
+    public MatchesDaoImpl() {
+        super(Matches.class);
+    }
 }

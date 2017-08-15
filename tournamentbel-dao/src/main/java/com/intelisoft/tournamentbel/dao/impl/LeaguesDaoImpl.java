@@ -13,5 +13,7 @@ import java.util.List;
 public class LeaguesDaoImpl extends AbstractDaoImpl<Leagues> implements ILeaguesDao {
 
 
-
+    public LeaguesDaoImpl() {
+        super(Leagues.class );
+    }
 }

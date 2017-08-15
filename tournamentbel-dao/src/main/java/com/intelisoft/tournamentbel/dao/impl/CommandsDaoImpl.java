@@ -12,6 +12,7 @@ import java.util.List;
 public class CommandsDaoImpl  extends AbstractDaoImpl<Commands> implements ICommandsDao  {
 
 
-
-
+    public CommandsDaoImpl() {
+        super(Commands.class);
+    }
 }

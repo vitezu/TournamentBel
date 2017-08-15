@@ -14,11 +14,12 @@ import org.hibernate.Session;
  */
 public  class TournamentServiceImpl implements ITournamentsService{
     private final Logger logger =  Logger.getLogger(TournamentServiceImpl.class);
-    TournamentsDaoImpl tournamentsDaoImpl = new TournamentsDaoImpl();
+    private final TournamentsDaoImpl tournamentsDaoImpl = new TournamentsDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
 
 
     public void add (Tournaments tournament){
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             tournamentsDaoImpl.save(tournament, session);

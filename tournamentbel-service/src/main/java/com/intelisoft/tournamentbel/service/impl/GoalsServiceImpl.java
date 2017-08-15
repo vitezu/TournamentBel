@@ -16,10 +16,13 @@ import java.util.List;
  */
 public class GoalsServiceImpl implements IGoalsService {
     private final Logger logger = Logger.getLogger(GoalsServiceImpl.class);
-    GoalsDaoImpl goalsDaoImpl = new GoalsDaoImpl();
+    private final GoalsDaoImpl goalsDaoImpl = new GoalsDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
+
+
 
     public void add(Goals goal) {
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             goalsDaoImpl.save(goal, session);
@@ -31,7 +34,7 @@ public class GoalsServiceImpl implements IGoalsService {
     }
 
     public void delete(Goals goal) {
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             goalsDaoImpl.delete(goal, session);
@@ -45,7 +48,7 @@ public class GoalsServiceImpl implements IGoalsService {
 
     public void getAll() {
         List<Goals> goals = null;
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             Criteria criteria = session.createCriteria(Goals.class);
@@ -64,7 +67,7 @@ public class GoalsServiceImpl implements IGoalsService {
 
     public Goals getById(Integer id) {
         Criteria criteria = null;
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             criteria = session.createCriteria(Goals.class);

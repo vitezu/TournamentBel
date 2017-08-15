@@ -22,9 +22,12 @@ import static com.intelisoft.tournamentbel.entity.Periods.NamePeriod.Second;
 public class MatchesServiceImpl implements IMatchesService {
 
     private final Logger logger =  Logger.getLogger(MatchesServiceImpl.class);
-    MatchesDaoImpl matchesDaoImpl = new MatchesDaoImpl();
+    private final MatchesDaoImpl matchesDaoImpl = new MatchesDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
+
+
     public void add (Matches match){
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             matchesDaoImpl.save(match, session);
@@ -34,6 +37,7 @@ public class MatchesServiceImpl implements IMatchesService {
             session.getTransaction().rollback();
         }
     }
+
 
 
 }

@@ -15,6 +15,10 @@ import java.util.List;
  */
 public class PlayersDaoImpl extends AbstractDaoImpl<Players> implements IPlayersDao {
 
+    public PlayersDaoImpl() {
+        super(Players.class);
+    }
+
     public List<Players> GetWithCommands (Session session) {
         List<Players> players = new ArrayList<Players>();
         Criteria criteria = session.createCriteria(Players.class).createCriteria("commandsPlayer")

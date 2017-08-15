@@ -12,10 +12,12 @@ import org.hibernate.Session;
  */
 public class LeagueServiceImpl implements ILeagueService {
     private final Logger logger =  Logger.getLogger(LeagueServiceImpl.class);
-    LeaguesDaoImpl leaguesDaoImpl = new LeaguesDaoImpl();
+    private final LeaguesDaoImpl leaguesDaoImpl = new LeaguesDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
+
 
     public void add (Leagues league){
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             leaguesDaoImpl.save(league, session);

@@ -10,10 +10,11 @@ import org.hibernate.Session;
 
 public class PlayersServiceImpl implements IPlayersService {
     private final Logger logger =  Logger.getLogger(PlayersServiceImpl.class);
-    PlayersDaoImpl playersDaoImpl = new PlayersDaoImpl();
+    private final PlayersDaoImpl playersDaoImpl = new PlayersDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
 
         public void add (Players player){
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             playersDaoImpl.save(player, session);
@@ -26,7 +27,7 @@ public class PlayersServiceImpl implements IPlayersService {
     }
 
     public void delete(Players player) {
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             playersDaoImpl.delete(player, session);
@@ -38,7 +39,7 @@ public class PlayersServiceImpl implements IPlayersService {
     }
 
     public void GetWithCommand() {
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             playersDaoImpl.GetWithCommands(session);
@@ -53,7 +54,7 @@ public class PlayersServiceImpl implements IPlayersService {
 
     public void foundByName(){
 
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             playersDaoImpl.foundByName(session);

@@ -10,7 +10,7 @@ import java.util.List;
  * Created by Pavel on 02.08.2017.
  */
 public class GoalsDaoImpl extends AbstractDaoImpl<Goals> implements IGoalsDao {
-
-
-
+    public GoalsDaoImpl() {
+        super(Goals.class);
+    }
 }

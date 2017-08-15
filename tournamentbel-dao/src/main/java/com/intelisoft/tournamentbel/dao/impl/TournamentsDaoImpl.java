@@ -13,4 +13,7 @@ import java.util.List;
  */
 public class TournamentsDaoImpl extends AbstractDaoImpl<Tournaments> implements ITournamentsDao  {
 
+    public TournamentsDaoImpl() {
+        super(Tournaments.class);
+    }
 }

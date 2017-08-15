@@ -9,10 +9,12 @@ import org.hibernate.Session;
 
 public class CommandsServiceImpl implements ICommandsService {
     private final Logger logger =  Logger.getLogger(CommandsServiceImpl.class);
-    CommandsDaoImpl commandsDaoImpl = new CommandsDaoImpl();
+    private final CommandsDaoImpl commandsDaoImpl = new CommandsDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
+
 
     public void add (Commands command){
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
         session.beginTransaction();
             commandsDaoImpl.save(command, session);

@@ -9,10 +9,11 @@ import org.hibernate.Session;
 
 public class PeriodsServiceImpl implements IPeriodsService {
     private final Logger logger =  Logger.getLogger(PeriodsServiceImpl.class);
-    PeriodsDaoImpl periodsDaoImpl = new PeriodsDaoImpl();
+    private final PeriodsDaoImpl periodsDaoImpl = new PeriodsDaoImpl();
+    private final HibernateUtil hibernateUtil = HibernateUtil.getInstance();
 
     public void add (Periods period){
-        Session session = HibernateUtil.getSession();
+        Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
             periodsDaoImpl.save(period, session);
