@@ -19,7 +19,7 @@ public class PlayersDaoImpl extends AbstractDaoImpl<Players> implements IPlayers
         super(Players.class);
     }
 
-    public void GetWithCommands (Session session) {
+    public void getWithCommands (Session session) {
         List<Players> players = new ArrayList<Players>();
         Criteria criteria = session.createCriteria(Players.class).createAlias("commandsPlayers","c", JoinType.LEFT_OUTER_JOIN)
                 .add(Restrictions.eq("lastName", "Sidorov"));

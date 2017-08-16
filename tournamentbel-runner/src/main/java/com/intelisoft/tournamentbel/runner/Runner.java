@@ -22,7 +22,7 @@ public class Runner {
         Leagues topLeague = new Leagues("Top league", tournament1);
         Leagues firstLeague = new Leagues("First league", tournament1);
 
-        tournamentServiceImpl.add(tournament1);
+//        tournamentServiceImpl.add(tournament1);
 //        leagueService.add(topLeague);
 //        leagueService.add(firstLeague);
 
@@ -132,10 +132,11 @@ public class Runner {
 //        periodsService.add(period2);
 //        periodsService.add(period3);
 //        periodsService.add(period4);
-
-
+        
 //        Delete object
-        goalsService.delete(goal4);
+        Goals goal = new Goals();
+        goal.setId(4);
+        goalsService.delete(goal);
 
 //        GetAll
         List<Goals> goals = null;
@@ -153,10 +154,7 @@ public class Runner {
 
     //founByName
         playersServiceImpl.foundByName();
-
-
-//
-        playersServiceImpl.GetWithCommand();
+//  getWithCommand
+        playersServiceImpl.getWithCommand();
    }
-
 }
