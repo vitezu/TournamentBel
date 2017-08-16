@@ -4,4 +4,5 @@ import com.intelisoft.tournamentbel.entity.Tournaments;
 
 public interface ITournamentsService  {
     public void add (Tournaments tournament);
+    public void delete (Tournaments tournament);
 }

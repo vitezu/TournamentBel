@@ -38,6 +38,17 @@ public class MatchesServiceImpl implements IMatchesService {
         }
     }
 
+    public void delete(Matches match) {
+        Session session = hibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            matchesDaoImpl.delete(match, session);
+            session.getTransaction().commit();
+        }catch  (Exception e){
+            logger.error("Error delete Matche");
+            session.getTransaction().rollback();
+        }
+    }
 
 
 }

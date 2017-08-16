@@ -29,4 +29,16 @@ public  class TournamentServiceImpl implements ITournamentsService{
             session.getTransaction().rollback();
         }
     }
+
+    public void delete(Tournaments tournament) {
+        Session session = hibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            tournamentsDaoImpl.delete(tournament, session);
+            session.getTransaction().commit();
+        }catch  (Exception e){
+            logger.error("Error delete Tournament");
+            session.getTransaction().rollback();
+        }
+    }
 }

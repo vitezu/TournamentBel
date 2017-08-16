@@ -24,4 +24,16 @@ public class PeriodsServiceImpl implements IPeriodsService {
         }
     }
 
+    public void delete(Periods period) {
+        Session session = hibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            periodsDaoImpl.delete(period, session);
+            session.getTransaction().commit();
+        }catch  (Exception e){
+            logger.error("Error delete period");
+            session.getTransaction().rollback();
+        }
+    }
+
 }

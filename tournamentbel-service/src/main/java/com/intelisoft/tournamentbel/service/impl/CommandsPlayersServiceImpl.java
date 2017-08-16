@@ -25,4 +25,16 @@ public class CommandsPlayersServiceImpl implements ICommandsPlayersService {
             session.getTransaction().rollback();
         }
     }
+
+    public void delete(CommandsPlayers commandsPlayers) {
+        Session session = hibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            commandsPlayersDaoImpl.delete(commandsPlayers, session);
+            session.getTransaction().commit();
+        }catch  (Exception e){
+            logger.error("Error delete CommandsPlayers");
+            session.getTransaction().rollback();
+        }
+    }
 }

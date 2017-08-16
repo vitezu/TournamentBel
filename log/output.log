@@ -231,3 +231,8 @@
 14:36:51,028 ERROR main CommandsService:getAll:32 - Error add Players
 14:40:56,216 ERROR main CommandsService:getAll:32 - Error getAll Players
 15:15:35,796 ERROR main CommandsService:getAll:41 - Error getAll Players
+17:52:38,837 ERROR main PlayersServiceImpl:GetWithCommand:48 - Error GetWithCommand
+17:52:57,799 ERROR main PlayersServiceImpl:GetWithCommand:48 - Error GetWithCommand
+18:12:49,295 ERROR main PlayersServiceImpl:GetWithCommand:48 - Error GetWithCommand
+18:55:09,437 ERROR main PlayersServiceImpl:GetWithCommand:48 - Error GetWithCommand
+17:18:59,129 ERROR main GoalsServiceImpl:delete:44 - Error delete goal

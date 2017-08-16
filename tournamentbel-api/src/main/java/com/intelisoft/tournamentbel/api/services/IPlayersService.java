@@ -6,5 +6,7 @@ public interface IPlayersService {
 
     public void add (Players player);
     public void delete (Players player);
+    public void getWithCommand();
+    public void foundByName();
 
 }

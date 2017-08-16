@@ -4,4 +4,5 @@ import com.intelisoft.tournamentbel.entity.Leagues;
 
 public interface ILeagueService {
     public void add (Leagues league);
+    public void delete (Leagues league);
 }

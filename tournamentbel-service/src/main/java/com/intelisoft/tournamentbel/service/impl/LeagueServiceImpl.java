@@ -27,4 +27,16 @@ public class LeagueServiceImpl implements ILeagueService {
             session.getTransaction().rollback();
         }
     }
+
+    public void delete(Leagues league) {
+        Session session = hibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            leaguesDaoImpl.delete(league, session);
+            session.getTransaction().commit();
+        }catch  (Exception e){
+            logger.error("Error delete League");
+            session.getTransaction().rollback();
+        }
+    }
 }

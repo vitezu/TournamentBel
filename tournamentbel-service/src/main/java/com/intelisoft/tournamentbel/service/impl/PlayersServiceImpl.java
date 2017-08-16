@@ -23,7 +23,6 @@ public class PlayersServiceImpl implements IPlayersService {
             logger.error("Error add Players");
             session.getTransaction().rollback();
         }
-
     }
 
     public void delete(Players player) {
@@ -38,18 +37,16 @@ public class PlayersServiceImpl implements IPlayersService {
         }
     }
 
-    public void GetWithCommand() {
+    public void getWithCommand() {
         Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
-            playersDaoImpl.GetWithCommands(session);
+            playersDaoImpl.getWithCommands(session);
             session.getTransaction().commit();
         } catch (Exception e) {
             logger.error("Error GetWithCommand");
             session.getTransaction().rollback();
         }
-
-
     }
 
     public void foundByName(){
