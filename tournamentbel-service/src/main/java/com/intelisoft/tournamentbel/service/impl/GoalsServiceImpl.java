@@ -48,11 +48,11 @@ public class GoalsServiceImpl implements IGoalsService {
 
 
     public List<Goals> getAll() {
-        List<Goals> goals = new ArrayList<Goals>();
+        List<Goals> goals =null;
         Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
-            goalsDaoImpl.getAll(session);
+            goals = goalsDaoImpl.getAll(session);
             session.getTransaction().commit();
         } catch (Exception e) {
             logger.error("Error getAll Goals");
@@ -63,18 +63,16 @@ public class GoalsServiceImpl implements IGoalsService {
 
 
     public Goals getById(Integer id) {
-        Criteria criteria = null;
+        Goals goal=null;
         Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
-            criteria = session.createCriteria(Goals.class);
-            criteria.add(Restrictions.eq("id", id));
+            goal = goalsDaoImpl.getById(session, id);
             session.getTransaction().commit();
         } catch (Exception e) {
             logger.error("Error getAll Goals");
             session.getTransaction().rollback();
         }
-
-        return (Goals) criteria.list().get(0);
+        return goal;
     }
 }

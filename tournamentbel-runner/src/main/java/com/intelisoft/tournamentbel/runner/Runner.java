@@ -1,21 +1,13 @@
 package com.intelisoft.tournamentbel.runner;
 
-import com.intelisoft.tournamentbel.dao.util.HibernateUtil;
 import com.intelisoft.tournamentbel.entity.*;
 import com.intelisoft.tournamentbel.service.impl.*;
-import org.hibernate.Criteria;
-import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
-
 import java.sql.Time;
-
 import java.util.*;
 
 public class Runner {
 
     public static void main(String[] args) {
-
-
 
 //        Add leagues and Tournaments
         TournamentServiceImpl tournamentServiceImpl = new TournamentServiceImpl();
@@ -31,8 +23,8 @@ public class Runner {
         Leagues firstLeague = new Leagues("First league", tournament1);
 
         tournamentServiceImpl.add(tournament1);
-        leagueService.add(topLeague);
-        leagueService.add(firstLeague);
+//        leagueService.add(topLeague);
+//        leagueService.add(firstLeague);
 
 //        Add commands
         Commands commandNeman = new Commands("Neman", "Grodno", "Ermakovich", 76);
@@ -146,20 +138,20 @@ public class Runner {
         goalsService.delete(goal4);
 
 //        GetAll
-        goalsService.getAll();
-        List<Goals> goals = new ArrayList<Goals>();
+        List<Goals> goals = null;
+        goals = goalsService.getAll();
         for (Goals t : goals) {
             System.out.println(t);
         }
 
 //        GetById
-    System.out.println(goalsService.getById(2));
+         System.out.println(goalsService.getById(1));
 
 //      Add player
         playersServiceImpl.add(player3);
         playersServiceImpl.delete(player3);
 
-//founByName
+    //founByName
         playersServiceImpl.foundByName();
 
 
