@@ -145,6 +145,8 @@ public class Runner {
             System.out.println(t);
         }
 
+
+
 //        GetById
          System.out.println(goalsService.getById(1));
 
@@ -155,6 +157,7 @@ public class Runner {
     //founByName
         playersServiceImpl.foundByName();
 //  getWithCommand
-        playersServiceImpl.getWithCommand();
+//        playersServiceImpl.getWithCommand();
+        matchesService.getWithGoals();
    }
 }

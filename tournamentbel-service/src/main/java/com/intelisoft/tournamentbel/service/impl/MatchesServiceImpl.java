@@ -50,5 +50,17 @@ public class MatchesServiceImpl implements IMatchesService {
         }
     }
 
+    public void getWithGoals() {
+        Session session = hibernateUtil.getSession();
+        try {
+            session.beginTransaction();
+            matchesDaoImpl.getWithGoals( session);
+            session.getTransaction().commit();
+        }catch  (Exception e){
+            logger.error("Error getWithGoals Matche");
+            session.getTransaction().rollback();
+        }
+    }
+
 
 }

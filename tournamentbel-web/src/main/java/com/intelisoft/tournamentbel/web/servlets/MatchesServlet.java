@@ -13,28 +13,22 @@ import java.io.PrintWriter;
 @WebServlet("/matches")
     public class MatchesServlet extends HttpServlet {
 
-//        @Override
-//        protected void doPost(HttpServletRequest request, HttpServletResponse response)
-//                throws ServletException, IOException {
-//            super.doPost(request, response);
-//        }
 //
-//        @Override
-//        protected void doGet(HttpServletRequest request, HttpServletResponse response)
-//                throws ServletException, IOException {
-//            response.setContentType("text/html");
-//            PrintWriter out = response.getWriter();
+//       @Override
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+    response.setContentType("text/html");
+
+    RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+    dispatcher.forward(request, response);
+}
+////      @Override
+//protected void doGet(HttpServletRequest request, HttpServletResponse response)
+//        throws ServletException, IOException {
+//    response.setContentType("text/html");
+//    PrintWriter out = response.getWriter();
 //
-//            out.println("Hello Zubrytski.Pavel");
-////            String varTextA = "Hello World!";
-////            request.setAttribute("textA", varTextA);
-////            String varTextB = "It JSP.";
-////            request.setAttribute("textB", varTextB);
-        @Override
-        protected void doGet(HttpServletRequest request, HttpServletResponse response)
-                throws ServletException, IOException {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
-            dispatcher.forward(request, response);
-        }
+//    out.println("Hello Word");
+//}
     }
 
