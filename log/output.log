@@ -236,3 +236,4 @@
 18:12:49,295 ERROR main PlayersServiceImpl:GetWithCommand:48 - Error GetWithCommand
 18:55:09,437 ERROR main PlayersServiceImpl:GetWithCommand:48 - Error GetWithCommand
 17:18:59,129 ERROR main GoalsServiceImpl:delete:44 - Error delete goal
+19:55:38,639 ERROR main GoalsServiceImpl:delete:44 - Error delete goal

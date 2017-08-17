@@ -20,15 +20,14 @@ public class MatchesDaoImpl extends AbstractDaoImpl<Matches> implements IMatches
         super(Matches.class);
     }
 
-    public void getWithGoals(Session session){
+    public List<Matches> getWithGoals(Session session){
         List<Matches> matches = null;
         Criteria criteria = session.createCriteria(Matches.class).createAlias("goals","c", JoinType.LEFT_OUTER_JOIN);
 //                .add(Restrictions.eq("lastName", "Sidorov"));
 
-        matches = criteria.list();
-        for (Matches p : matches){
-            System.out.println(p.getGoalsList());
+        return matches = criteria.list();
         }
+
     }
 
-}
+

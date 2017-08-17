@@ -2,7 +2,6 @@ package com.intelisoft.tournamentbel.service.impl;
 
 
 import com.intelisoft.tournamentbel.api.services.IMatchesService;
-import com.intelisoft.tournamentbel.dao.impl.CommandsDaoImpl;
 import com.intelisoft.tournamentbel.dao.impl.MatchesDaoImpl;
 
 import com.intelisoft.tournamentbel.dao.util.HibernateUtil;
@@ -12,8 +11,7 @@ import com.intelisoft.tournamentbel.entity.*;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
-import static com.intelisoft.tournamentbel.entity.Periods.NamePeriod.First;
-import static com.intelisoft.tournamentbel.entity.Periods.NamePeriod.Second;
+import java.util.List;
 
 
 /**
@@ -50,16 +48,18 @@ public class MatchesServiceImpl implements IMatchesService {
         }
     }
 
-    public void getWithGoals() {
+    public List<Matches> getWithGoals() {
+        List<Matches> matches = null;
         Session session = hibernateUtil.getSession();
         try {
             session.beginTransaction();
-            matchesDaoImpl.getWithGoals( session);
+            matches = matchesDaoImpl.getWithGoals( session);
             session.getTransaction().commit();
         }catch  (Exception e){
             logger.error("Error getWithGoals Matche");
             session.getTransaction().rollback();
         }
+        return matches;
     }
 
 
