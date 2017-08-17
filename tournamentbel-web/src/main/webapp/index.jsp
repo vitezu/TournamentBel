@@ -1,10 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>matches</title>
+    <title></title>
 </head>
 <body>
-${textA}
-${textB}
+Hello Pavel!
 </body>
 </html>
