@@ -4,14 +4,14 @@
 
 <web-app>
 
-  <servlet>
-    <servlet-name>test</servlet-name>
-    <servlet-class>com.intelisoft.tournamentbel.web.servlets.MatchesServlet</servlet-class>
-  </servlet>
+  <!--<servlet>-->
+    <!--<servlet-name>test</servlet-name>-->
+    <!--<servlet-class>com.intelisoft.tournamentbel.web.servlets.MatchesServlet</servlet-class>-->
+  <!--</servlet>-->
 
-  <servlet-mapping>
-    <servlet-name>test</servlet-name>
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>test</servlet-name>-->
+    <!--<url-pattern>/</url-pattern>-->
+  <!--</servlet-mapping>-->
 
 </web-app>
