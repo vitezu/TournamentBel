@@ -23,17 +23,18 @@ MatchesServiceImpl matchesService = new MatchesServiceImpl();
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
     response.setContentType("text/html; charset = UTF-8");
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        System.out.println(firstName);
-        System.out.println(lastName);
+        Integer firstNumber = Integer.valueOf(request.getParameter("firstNumber"));
+        Integer secondNumber = Integer.valueOf(request.getParameter("secondNumber"));
+        Integer sum = firstNumber + secondNumber;
 
-        response.getWriter().print("<h3> Heloo!!ServlGet " + firstName + lastName + "</h3>");
+
+        response.getWriter().print("<h3> Heloo!!Сумма= " + sum + "</h3>");
 
 //    List<Matches> matches =  matchesService.getWithGoals();
 //    response.getWriter().print(matches);
 
 }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
