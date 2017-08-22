@@ -23,17 +23,29 @@ MatchesServiceImpl matchesService = new MatchesServiceImpl();
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
     response.setContentType("text/html; charset = UTF-8");
-//        String firstName = request.getParameter("firstName");
-//        String lastName = request.getParameter("lastName");
-//        System.out.println(firstName);
-//        System.out.println(lastName);
-//
-//
-//        response.getWriter().print("<h3> Heloo!! " + firstName + lastName + "</h3>");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        System.out.println(firstName);
+        System.out.println(lastName);
 
-    List<Matches> matches =  matchesService.getWithGoals();
-    response.getWriter().print(matches);
+        response.getWriter().print("<h3> Heloo!!ServlGet " + firstName + lastName + "</h3>");
+
+//    List<Matches> matches =  matchesService.getWithGoals();
+//    response.getWriter().print(matches);
 
 }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        System.out.println(firstName);
+        System.out.println(lastName);
+
+        response.setContentType("text/html; charset = UTF-8");
+
+        response.getWriter().print("<h3> Heloo!!ServlPost " + firstName + " " + lastName + "</h3>");
+    }
     }
 
