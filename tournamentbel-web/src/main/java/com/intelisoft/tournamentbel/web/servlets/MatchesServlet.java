@@ -10,19 +10,25 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 
-@WebServlet("/MyServlet")
+@WebServlet(urlPatterns = "/MyServlet", loadOnStartup = 0)
     public class MatchesServlet extends HttpServlet {
     private static final long serialVersionUID = -7575766587576L;
 MatchesServiceImpl matchesService = new MatchesServiceImpl();
 //
-//       @Override
+
+
+    //       @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
+
+
+
     response.setContentType("text/html; charset = UTF-8");
         Integer firstNumber = Integer.valueOf(request.getParameter("firstNumber"));
         Integer secondNumber = Integer.valueOf(request.getParameter("secondNumber"));
@@ -39,6 +45,7 @@ MatchesServiceImpl matchesService = new MatchesServiceImpl();
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
+        
 
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
@@ -64,6 +71,7 @@ MatchesServiceImpl matchesService = new MatchesServiceImpl();
         out.println("Профессия: " + Arrays.deepToString(jobs) + "<br>");
         out.println("Пол: " + gender + "<br>");
         out.println("Старше 18? " + age18 + "<br>");
+        out.println("<a href = 'http://localhost:8080/Test.html'>Назад</a> <br>");
         out.close();
 
 
