@@ -1,24 +1,76 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form method = "POST", action = "MyServlet">-->
+    <!--<table>-->
+        <!--<tr>-->
+        <!--<td>NumberOne:</td>-->
+            <!--<td><input type = "number" name = "firstNumber"></td>-->
+        <!--</tr>-->
+
+        <!--<tr>-->
+            <!--<td>NumberTwo :</td>-->
+            <!--<td><input type = "number" name = "secondNumber"></td>-->
+        <!--</tr>-->
+
+        <!--<tr>-->
+            <!--<td align="right" colspan="10"><input type = "submit" value = "Сложить"></td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TestData</title>
 </head>
 <body>
-<form method = "GET", action = "MyServlet">
+<form method = "POST", action = "MyServlet">
     <table>
         <tr>
-        <td>NumberOne:</td>
-            <td><input type = "number" name = "firstNumber"></td>
+            <td>Name:</td>
+            <td><input type = "text" name = "firstName"></td>
         </tr>
 
         <tr>
-            <td>NumberTwo :</td>
-            <td><input type = "number" name = "secondNumber"></td>
+            <td>lastName :</td>
+            <td><input type = "text" name = "lastName"></td>
         </tr>
 
+
         <tr>
-            <td align="right" colspan="2"><input type = "submit" value = "Сложить"></td>
+            <td>Профессия:</td>
+            <td>
+                <select name = "job" multiple size =  "4">
+                    <option value="Developer">Разработчик</option>
+                    <option value = "Dvornik">Дворник</option>
+                    <option selected value = "Unworker">Безработный</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Пол:</td>
+            <td>
+                <input type = "radio" name = "gender" value = "М">Мужчина</input><br>
+                <input type = "radio" name = "gender" value = "Ж">Женщина</input>
+            </td>
+        </tr>
+        <tr>
+            <td>Старше 18 лет?</td>
+            <td>
+                <input type = "checkbox" name = "age18" value = "ДА">Да</input><br>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" colspan="2"><input type = "submit" value = "Отправить"></td>
         </tr>
     </table>
 </form>
