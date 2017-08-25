@@ -1,6 +1,5 @@
 package com.intelisoft.tournamentbel.web.servlets;
 
-
 import com.intelisoft.tournamentbel.entity.Matches;
 import com.intelisoft.tournamentbel.service.impl.MatchesServiceImpl;
 
@@ -19,10 +18,7 @@ import java.util.List;
 @WebServlet(urlPatterns = "/MyServlet", loadOnStartup = 0)
     public class MatchesServlet extends HttpServlet {
     private static final long serialVersionUID = -7575766587576L;
-MatchesServiceImpl matchesService = new MatchesServiceImpl();
 //
-
-
     //       @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
