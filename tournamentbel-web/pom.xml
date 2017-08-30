@@ -24,18 +24,11 @@
       <scope>provided</scope>
     </dependency>
 
-    <!--<dependency>-->
-      <!--<groupId>javaee</groupId>-->
-      <!--<artifactId>javaee-api</artifactId>-->
-      <!--<version>5</version>-->
-    <!--</dependency>-->
-
-    <!--<dependency>-->
-      <!--<groupId>javax</groupId>-->
-      <!--<artifactId>javaee-web-api</artifactId>-->
-      <!--<version>6.0</version>-->
-      <!--<scope>provided</scope>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
 
     <dependency>
       <groupId>com.intelisoft.tournamentbel</groupId>
@@ -46,16 +39,6 @@
 
   <build>
     <plugins>
-
-      <!--<plugin>-->
-        <!--<groupId>org.apache.maven.plugins</groupId>-->
-        <!--<artifactId>maven-compiler-plugin</artifactId>-->
-        <!--<configuration>-->
-          <!--<source>1.5</source>-->
-          <!--<target>1.5</target>-->
-        <!--</configuration>-->
-      <!--</plugin>-->
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
