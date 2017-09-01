@@ -60,7 +60,7 @@
     <c:forTokens items = "Papa-Mama-Child" delims = "-" var = "name" >
         <c:out value="${name}" /><p>
     </c:forTokens>
-    
+
 </h1>
 </body>
 </html>
