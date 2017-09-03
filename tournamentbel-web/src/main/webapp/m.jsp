@@ -9,9 +9,9 @@
 </head>
 <body>
 <h1>Servlet View</h1>
+<c:out value="${lastName}"/>
+<c:out value="${firstName}"/>
 
-<%if (request.getAttribute("name") != null) {
-    System.out.println("<p>" + request.getAttribute("name") + "</p>");
-}%>
+
 </body>
 </html>

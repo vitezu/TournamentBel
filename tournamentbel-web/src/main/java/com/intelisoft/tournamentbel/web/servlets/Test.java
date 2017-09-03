@@ -19,22 +19,14 @@ public class Test extends HttpServlet {
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
         String check = request.getParameter("check");
-        request.setAttribute("name", "check");
+
+        request.setAttribute("check", check );
+        request.setAttribute("lastName", lastName );
+        request.setAttribute("firstName", firstName );
+
         this.getServletContext().getRequestDispatcher("/m.jsp").forward(request, response);
-//        getServletContext().getRequestDispatcher("/m.jsp").forward(request, response);
-//
-//        String firstName = request.getParameter("firstName");
-//        String lastName = request.getParameter("lastName");
-//        String check = request.getParameter("check");
-//
-//        response.setContentType("text/html; charset = UTF-8");
-//        PrintWriter out = response.getWriter();
-//        if (check != null) {
-//            out.println("Имя " + firstName + "<br>");
-//            out.println("Фамилия " + lastName + "<br>");
-//        } else {
-//            out.println("Имя " + firstName + "<br>");
-//        }
     }
 }
