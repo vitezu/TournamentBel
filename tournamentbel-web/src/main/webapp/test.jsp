@@ -5,7 +5,7 @@
     <title>Test</title>
 </head>
 <body>
-<form method = "GET", action = "Test">
+<form method = "POST", action = "Test">
     <table>
         <tr>
             <td>Имя:</td>

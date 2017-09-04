@@ -8,10 +8,14 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Servlet View</h1>
-<c:out value="${lastName}"/>
-<c:out value="${firstName}"/>
+<c:if test="${check ne null}">
+<p>Имя: <c:out value="${firstName}"/><p>
+<p>Фамилия: <c:out value="${lastName}"/><p>
+    </c:if>
 
+    <c:if test="${check eq null}">
+<p>Имя: <c:out value="${firstName}"/><p>
+    </c:if>
 
 </body>
 </html>
