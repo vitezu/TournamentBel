@@ -7,6 +7,7 @@ import java.io.IOException;
 public class FilterConnect implements Filter {
     private FilterConfig config = null;
     private boolean active = false;
+
     public void destroy() {
             config = null;
     }
@@ -20,10 +21,8 @@ public class FilterConnect implements Filter {
     }
 
     public void init(FilterConfig config) throws ServletException {
-        this.config = config;
-        String act = config.getInitParameter("active");
-        if (act != null)
-            active = (act.toUpperCase().equals("TRUE"));
+
+        this.active = Boolean.parseBoolean(config.getInitParameter("active"));
     }
 
 }

@@ -6,8 +6,11 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel = "stylesheet" type = "text/css" href = "test.css">;
+
 </head>
 <body>
+<h1> WELCOME! </h1>
 <c:if test="${check ne null}">
 <p>Имя: <c:out value="${firstName}"/><p>
 <p>Фамилия: <c:out value="${lastName}"/><p>

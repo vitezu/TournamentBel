@@ -13,13 +13,11 @@ public class Test extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
            throws ServletException, IOException {
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        String check = request.getParameter("check");
 
-        request.setAttribute("check", check );
-        request.setAttribute("lastName", lastName );
-        request.setAttribute("firstName", firstName );
-        this.getServletContext().getRequestDispatcher("/m.jsp").forward(request, response);
+    request.setAttribute("check", request.getParameter("firstName"));
+    request.setAttribute("lastName", request.getParameter("lastName"));
+    request.setAttribute("firstName", request.getParameter("firstName"));
+    this.getServletContext().getRequestDispatcher("/m.jsp").forward(request, response);
+
     }
 }
