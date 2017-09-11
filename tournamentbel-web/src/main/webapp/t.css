@@ -1,0 +1,23 @@
+body{
+    background-image:url(1.jpg);
+}
+
+div{
+    transform: rotate(0deg);
+    transition: 1s transform;
+    background-color: gainsboro;
+    color: #200772;
+    border: 3px black solid;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+    width: 70px;
+
+}
+div:hover{
+    transform: rotate(45deg) scale(0,3);
+    background-color: red;
+}
+a{
+    color:#269926;
+}
